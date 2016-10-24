@@ -1,0 +1,15 @@
+@import 'vendor';
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  min-height: 100vw;
+
+  font-size: 62.5%;
+}
