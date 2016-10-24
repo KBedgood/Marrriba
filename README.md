@@ -1,7 +1,7 @@
 #Marrriba
 
-Make sure you have `EditorConfig` installed for Sublime Text 2:
-- Open Sublime Text 2
+Make sure you have `EditorConfig` installed for Sublime Text 3:
+- Open Sublime Text 3
 - Hit `Ctrl` + `Shift` + `P`
 - Type `EditorConfig`
 - Hit `Enter`/`Return` to install
