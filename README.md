@@ -1,10 +1,14 @@
 #Marrriba
 
-Make sure you have `EditorConfig` installed for Sublime Text 2:
-- Open Sublime Text 2
-- Hit `Ctrl` + `Shift` + `P`
-- Type `EditorConfig`
-- Hit `Enter`/`Return` to install
+##Setup
+
+Make sure you have `EditorConfig` installed for Sublime Text (assuming you Pacage Control installed):
+- Open Sublime Text
+- Hit `Ctrl`/`CMD` + `Shift` + `P`
+- Type `Install Packages` and hit `Enter`
+- Type `EditorConfig` and hit `Enter` to install
+
+Make sure to `npm install` after cloning the repository
 
 ## Included Scripts
 
