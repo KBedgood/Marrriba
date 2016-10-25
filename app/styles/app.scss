@@ -1,1 +1,191 @@
 @import 'lib/base';
+
+/*
+ * Mobile-First
+ */
+header {
+  background-color: $containerColor;
+
+  #logo {
+    display: block;
+    height: 8rem;
+    margin: 0 auto;
+  }
+
+  nav {
+    ul {
+      padding: 0;
+      margin: 0;
+
+      list-style: none;
+
+      li {
+        @include size(100%, 4rem);
+
+        a {
+          position: relative;
+
+          display: block;
+          @include size(inherit);
+
+          span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            @include transform(translate(-50%, -50%));
+
+            font-size: 1.2rem;
+            font-weight: 700;
+
+            color: $accentColor;
+          }
+
+          &:hover {
+            background-color: $accentColor;
+
+            span {
+              color: $backgroundColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*
+ * Tablet
+ */
+@media screen and (min-width: 544px) and (max-width: 777px) {
+  header {
+    position: fixed;
+
+    @include size(100%, 8rem);
+
+    #logo {
+      position: absolute;
+      top: 50%;
+      left: 3rem;
+      @include transform(translateY(-50%));
+
+      display: inline-block;
+      @include size(16rem, auto);
+      margin: 0;
+    }
+
+    nav {
+      float: right;
+      height: inherit;
+
+      ul {
+        display: inline-block;
+        height: inherit;
+
+        li {
+          display: inline-block;
+          @include size(5rem, inherit);
+
+          &:last-of-type {
+            margin-left: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*
+ * Small Desktop
+ */
+@media screen and (min-width: 778px) and (max-width: 845px) {
+  header {
+    position: fixed;
+
+    @include size(100%, 10rem);
+    padding: 0 2rem;
+
+    #logo {
+      position: absolute;
+      top: 50%;
+      left: 3rem;
+      @include transform(translateY(-50%));
+
+      display: inline-block;
+      @include size(auto, 90%);
+      margin: 0;
+    }
+
+    nav {
+      float: right;
+      height: inherit;
+
+      ul {
+        display: inline-block;
+        height: inherit;
+
+        li {
+          display: inline-block;
+          @include size(6rem, inherit);
+
+          a {
+            span {
+              font-size: 1.6rem;
+            }
+          }
+
+          &:last-of-type {
+            margin-left: 2.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*
+ * Medium Desktop and Above
+ */
+@media screen and (min-width: 846px) {
+  header {
+    position: fixed;
+
+    @include size(100%, 10rem);
+    padding: 0 2rem;
+
+    #logo {
+      position: absolute;
+      top: 50%;
+      left: 3rem;
+      @include transform(translateY(-50%));
+
+      display: inline-block;
+      @include size(auto, 90%);
+      margin: 0;
+    }
+
+    nav {
+      float: right;
+      height: inherit;
+
+      ul {
+        display: inline-block;
+        height: inherit;
+
+        li {
+          display: inline-block;
+          @include size(7rem, inherit);
+
+          a {
+            span {
+              font-size: 1.6rem;
+            }
+          }
+
+          &:last-of-type {
+            margin-left: 2.4rem;
+          }
+        }
+      }
+    }
+  }
+}
