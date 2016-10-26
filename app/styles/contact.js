@@ -24,7 +24,6 @@
                             <h3>Details ${boats.details}</h3>
                             </div>`)
 
-
  
 });
 
