@@ -19,7 +19,8 @@ const styleSources = [
 ];
 
 const scriptSources = [
-  './app/scripts/app.js'
+  './app/scripts/app.js',
+  './app/scripts/boats.js'
 ];
 
 const fontSources = [
@@ -55,12 +56,12 @@ gulp.task('scripts', () => {
       entries: [ entry ],
       debug: true
     }).bundle()
-        .on('error', gutil.log)
+      .on('error', gutil.log)
       .pipe(source(entry))
       .pipe(buffer())
       .pipe(srcMaps.init({ loadMaps: true }))
-        .pipe(babel(babelConfig))
-        .on('error', gutil.log)
+      .pipe(babel(babelConfig))
+      .on('error', gutil.log)
       .pipe(srcMaps.write())
       .pipe(gren({ dirname: '', extname: '.bundle.js' }))
       .pipe(gulp.dest(path.join(__dirname, 'dist/scripts')));
