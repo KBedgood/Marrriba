@@ -14,6 +14,7 @@ header {
                         margin: 0 auto;
             }
             nav {
+                        margin-left: 10px;
                         ul {
                                     padding: 0;
                                     margin: 0;
@@ -31,7 +32,7 @@ header {
                                                                         @include transform(translate(-50%, -50%));
                                                                         font-size: 1.2rem;
                                                                         font-weight: 700;
-                                                                        color: $accentColor;
+                                                                        color: $bodyTextColor;
                                                             }
                                                             &:hover {
                                                                         background-color: $accentColor;
@@ -45,16 +46,23 @@ header {
             }
 }
 
+.log {
+            a span {
+                        color: #ff530f;
+                        border-left: 2px solid white;
+                        padding-left: 17px;
+                        margin-left: -19px;
+            }
+}
+
 // main container
 .content {
             margin-top: 2rem;
             .welcome-text {
-                        font-size: 5rem;
+                        font-size: 28px;
+                        font-weight: bold;
                         font-weight: 700;
-                        text-align: center;
-                        padding-top: 25px;
-                        padding-bottom: 25px;
-                        color: $bodyTextColor;
+                        color: $accentColor;
             }
             .twitter-timeline-container {
                         margin-top: 25px;
@@ -87,29 +95,48 @@ header {
 
 // BOATS PAGE
 .mainHeader {
-            font-size: 48px;
-            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            font-weight: 700;
             color: $accentColor;
+            padding-left: 33px;
 }
 
-.boatDock {
-            margin-top: 30px;
-            height: 350px;
-            align-content: center;
+.boatBlock {
+            margin-top: 20px;
+            background-color: $backgroundColor;
+            padding: 30px;
+            .boatSlip {
+                        .boatImage {
+                                    img {
+                                                width: 100%;
+                                    }
+                        }
+            }
+}
+
+.boatSale {
+            margin-left: 15px;
             .boat-name {
-                        font-size: 14px;
+                        font-size: 21px;
                         font-weight: bold;
                         font-weight: 700;
-            }
-            .boat-photos {
-                        max-width: 100%;
+                        color: $bodyTextColor;
             }
             .boat-price {
-                        font-size: 16px;
+                        float: left;
+                        color: $secondaryTextColor;
+                        font-size: 12px;
+                        font-weight: 700;
                         padding-top: 10px;
             }
             .boat-details {
-                        font-size: 12px;
+                        float: left;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: $secondaryTextColor;
+                        padding-top: 3px;
+                        width: 100%;
             }
 }
 
@@ -179,6 +206,38 @@ iframe {
                         text-align: center;
                         margin-top: 25px;
             }
+}
+
+//BLOG
+.blog {
+            .blog-container {
+                        .blog-title {
+                                    font-size: 21px;
+                                    font-weight: bold;
+                                    font-weight: 700;
+                                    color: #2a3941;
+                        }
+                        .blog-time {
+                                    float: left;
+                                    color: #3f5764;
+                                    font-size: 12px;
+                                    font-weight: 700;
+                                    padding-top: 10px;
+                        }
+                        .blog-text {
+                                    float: left;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #3f5764;
+                                    padding-top: 3px;
+                        }
+            }
+}
+
+.blog-post {
+            margin-top: 20px;
+            background-color: $backgroundColor;
+            padding: 30px;
 }
 
 
