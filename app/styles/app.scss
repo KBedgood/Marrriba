@@ -53,9 +53,15 @@ header {
   }
 }
 
-// main container
-.content {
+// Home Page - main container
+.content-home {
     margin-top: 135px;
+    .welcome-text {
+      font-size: 5rem;
+      text-align: center;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
     .twitter-timeline-container {
       margin-top: 25px;  
       height: 700px;
@@ -77,6 +83,9 @@ header {
         font-size: 1.6rem;
         padding: 5px 0;
       }
+    }
+    .morecontent span {
+      display: none;
     }
     .social-icons {
       font-size: 40px;
