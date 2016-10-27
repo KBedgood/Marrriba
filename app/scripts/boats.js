@@ -17,10 +17,10 @@ $(document).ready(function() {
                             // Put the search results info into our page.
                             $("#boatDock").append(`
                                       <div class="boatDock col-md-3">
-                                      <h3>Name: ${boats.name}</h3>
-                                      <img class="boatPhotos" src="${boats.picture}">
-                                      <h3>Price: ${boats.price}</h3>
-                                      <h3>Details ${boats.description}</h3>
+                                      <h3 class="boat-name">${boats.name}</h3>
+                                      <img class="boat-photos" src="${boats.picture}">
+                                      <h3 class="boat-price">Price: ${boats.price}</h3>
+                                      <h3 class="boat-details">Details ${boats.description}</h3>
                                       </div>`)
                         })
                     }
