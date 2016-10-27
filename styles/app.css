@@ -7236,10 +7236,22 @@ header {
   .boatBlock .boatSlip .boatImage img {
     width: 100%; }
 
+<<<<<<< HEAD
 .boatSale {
   margin-left: 15px; }
   .boatSale .boat-name {
     font-size: 21px;
+=======
+.about .profile-avatar {
+  max-width: 100%; }
+
+.boatDock {
+  margin-top: 30px;
+  height: 350px;
+  align-content: center; }
+  .boatDock .boat-name {
+    font-size: 14px;
+>>>>>>> 9e3c907be131d2c75d60a757e5ee94be996e0543
     font-weight: bold;
     font-weight: 700;
     color: #2a3941; }
@@ -7306,6 +7318,7 @@ iframe {
   text-align: center;
   margin-top: 25px; }
 
+<<<<<<< HEAD
 .blog .blog-container .blog-title {
   font-size: 21px;
   font-weight: bold;
@@ -7330,6 +7343,12 @@ iframe {
   margin-top: 20px;
   background-color: #f0f0f0;
   padding: 30px; }
+=======
+.footer {
+  background-color: #ff530f;
+  width: 100%;
+  height: 290px; }
+>>>>>>> 9e3c907be131d2c75d60a757e5ee94be996e0543
 
 /*
  * Tablet
