@@ -12,8 +12,6 @@ $containerColor: hsl(199, 33%, 81%);
 *:before,
 *:after {
   box-sizing: border-box;
-
-  font-family: 'Open Sans', sans-serif;
 }
 
 html,
@@ -22,4 +20,10 @@ body {
   min-height: 100vh;
 
   font-size: 62.5%;
+
+  &,
+  &:before,
+  &:after {
+    font-family: 'Open Sans', sans-serif;
+  }
 }
