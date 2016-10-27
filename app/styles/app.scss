@@ -56,6 +56,7 @@ header {
 }
 
 // main container
+// HOME PAGE
 .content {
             margin-top: 2rem;
             .welcome-text {
@@ -115,8 +116,29 @@ header {
             }
 }
 
+<<<<<<< HEAD
 .boatSale {
             margin-left: 15px;
+=======
+
+// ABOUT PAGE
+.about {
+  .profile-avatar { 
+    max-width: 100%;
+
+  }
+}
+
+
+// CONTACT PAGE
+.contact {
+}
+
+.boatDock {
+            margin-top: 30px;
+            height: 350px;
+            align-content: center;
+>>>>>>> 9e3c907be131d2c75d60a757e5ee94be996e0543
             .boat-name {
                         font-size: 21px;
                         font-weight: bold;
@@ -138,11 +160,10 @@ header {
                         padding-top: 3px;
                         width: 100%;
             }
+
 }
 
 // CONTACT PAGE
-.content-contact {}
-
 .jotForm {
             margin-top: -46px;
 }
@@ -240,6 +261,14 @@ iframe {
             padding: 30px;
 }
 
+
+// All Pages - footer
+
+.footer {
+  background-color: $accentColor;
+  width: 100%;
+  height: 290px;
+}
 
 /*
  * Tablet
