@@ -7302,6 +7302,12 @@ header {
 
 .content {
   margin-top: 2rem; }
+  .content .welcome-text {
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px; }
   .content .twitter-timeline-container {
     margin-top: 25px;
     height: 700px; }
@@ -7350,13 +7356,6 @@ iframe {
 .home .carousel-item img {
   width: 100%;
   margin: 0 auto; }
-
-.home .welcome-text {
-  font-size: 5rem;
-  font-weight: 700;
-  text-align: center;
-  padding-top: 25px;
-  padding-bottom: 25px; }
 
 .home .twitter-timeline-container {
   margin-top: 25px;
