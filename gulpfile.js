@@ -10,7 +10,7 @@ const browserSync = require('browser-sync').create();
 const config = {
   styles: {
     src: [
-      './app/styles/app.scss'
+      './app/styles/*.scss'
     ],
     sass: {
       includePaths: [
@@ -21,8 +21,9 @@ const config = {
       ]
     },
     watch: [
-      './app/styles/app.scss',
-      './app/styles/lib/*.scss'
+      './app/styles/*.scss',
+      './app/styles/lib/*.scss',
+      './app/styles/partials/*.scss'
     ]
   },
   fonts: {
