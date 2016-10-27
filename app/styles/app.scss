@@ -5,99 +5,93 @@
  */
 
 header {
-  background-color: $containerColor;
-  top: 0;
-  z-index: 1;
-
-  #logo {
-    display: block;
-    height: 8rem;
-    margin: 0 auto;
-  }
-
-  nav {
-    ul {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-
-      li {
-        @include size(100%, 4rem);
-
-        a {
-          position: relative;
-          display: block;
-          @include size(inherit);
-
-          span {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            @include transform(translate(-50%, -50%));
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: $accentColor;
-          }
-
-          &:hover {
-            background-color: $accentColor;
-            span {
-              color: $backgroundColor;
+            background-color: $containerColor;
+            top: 0;
+            z-index: 1;
+            #logo {
+                        display: block;
+                        height: 8rem;
+                        margin: 0 auto;
             }
-          }
-        }
-      }
-    }
-  }
+            nav {
+                        ul {
+                                    padding: 0;
+                                    margin: 0;
+                                    list-style: none;
+                                    li {
+                                                @include size(100%, 4rem);
+                                                a {
+                                                            position: relative;
+                                                            display: block;
+                                                            @include size(inherit);
+                                                            span {
+                                                                        position: absolute;
+                                                                        top: 50%;
+                                                                        left: 50%;
+                                                                        @include transform(translate(-50%, -50%));
+                                                                        font-size: 1.2rem;
+                                                                        font-weight: 700;
+                                                                        color: $accentColor;
+                                                            }
+                                                            &:hover {
+                                                                        background-color: $accentColor;
+                                                                        span {
+                                                                                    color: $backgroundColor;
+                                                                        }
+                                                            }
+                                                }
+                                    }
+                        }
+            }
 }
 
 // main container
 .content {
-  margin-top: 2rem;
-
-  .welcome-text {
-    font-size: 5rem;
-    font-weight: 700;
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-
-  .twitter-timeline-container {
-    margin-top: 25px;
-    height: 700px;
-  }
-  .blog-container {
-    margin-top: 18px;
-    .blog-post {
-      padding-top: 5px;
-    }
-    .blog-text {
-      font-size: 1.5rem;
-      padding-bottom: 10px;
-    }
-    .blog-title {
-      font-size: 1.7rem;
-      margin-top: 10px;
-    }
-    .blog-time {
-      font-size: 1.6rem;
-      padding: 5px 0;
-    }
-  }
-  .social-icons {
-    font-size: 40px;
-    text-align: center;
-    margin-top: 25px;
-  }
+            margin-top: 2rem;
+            .welcome-text {
+                        font-size: 5rem;
+                        font-weight: 700;
+                        text-align: center;
+                        padding-top: 25px;
+                        padding-bottom: 25px;
+                        color: $bodyTextColor;
+            }
+            .twitter-timeline-container {
+                        margin-top: 25px;
+                        height: 700px;
+            }
+            .blog-container {
+                        margin-top: 18px;
+                        .blog-post {
+                                    padding-top: 5px;
+                        }
+                        .blog-text {
+                                    font-size: 1.5rem;
+                                    padding-bottom: 10px;
+                        }
+                        .blog-title {
+                                    font-size: 1.7rem;
+                                    margin-top: 10px;
+                        }
+                        .blog-time {
+                                    font-size: 1.6rem;
+                                    padding: 5px 0;
+                        }
+            }
+            .social-icons {
+                        font-size: 40px;
+                        text-align: center;
+                        margin-top: 25px;
+            }
 }
 
 // BOATS PAGE
 .mainHeader {
-  font-size: 48px;
-  text-align: center;
-  color: #FF530F;
+            font-size: 48px;
+            text-align: center;
+            color: $accentColor;
 }
+
 
 // ABOUT PAGE
 
@@ -109,77 +103,94 @@ header {
 
 // CONTACT PAGE
 .contact {
+.boatDock {
+            margin-top: 30px;
+            height: 350px;
+            align-content: center;
+            .boat-name {
+                        font-size: 14px;
+                        font-weight: bold;
+                        font-weight: 700;
+            }
+            .boat-photos {
+                        max-width: 100%;
+            }
+            .boat-price {
+                        font-size: 16px;
+                        padding-top: 10px;
+            }
+            .boat-details {
+                        font-size: 12px;
+            }
+
 }
 
+// CONTACT PAGE
+.content-contact {}
+
 .jotForm {
-  margin-top: -46px;
+            margin-top: -46px;
 }
 
 iframe {
-  margin-top: 90px;
+            margin-top: 90px;
 }
 
 .social-media {
-  font-size: 44px;
-  text-align: left;
+            font-size: 44px;
+            text-align: left;
 }
 
 .jake-contact {
-  margin-top: 40px;
-  h2 {
-    font-size: 28px;
-    color: $bodyTextColor;
-    p .email {
-      font-size: 18px;
-      color: hsl(201, 21%, 21%);
-    }
-  }
+            margin-top: 40px;
+            h2 {
+                        font-size: 28px;
+                        color: $bodyTextColor;
+                        p .email {
+                                    font-size: 18px;
+                                    color: hsl(201, 21%, 21%);
+                        }
+            }
 }
 
 // Home Page - main container
 .home {
-  .carousel-item {
-    img {
-      width: 100%;
-      margin: 0 auto;
-    }
-  }
-
-  .twitter-timeline-container {
-    margin-top: 25px;
-    height: 700px;
-  }
-
-  .blog-container {
-    margin-top: 18px;
-
-    .blog-post {
-      padding-top: 5px;
-    }
-
-    .blog-text {
-      font-size: 1.5rem;
-      padding-bottom: 10px;
-    }
-
-    .blog-title {
-      font-size: 1.7rem;
-      margin-top: 10px;
-    }
-
-    .blog-time {
-      font-size: 1.6rem;
-      padding: 5px 0;
-    }
-  }
-  .morecontent span {
-    display: none;
-  }
-  .social-icons {
-    font-size: 40px;
-    text-align: center;
-    margin-top: 25px;
-  }
+            .carousel-item {
+                        img {
+                                    width: 100%;
+                                    margin: 0 auto;
+                        }
+            }
+            .twitter-timeline-container {
+                        margin-top: 25px;
+                        height: 700px;
+            }
+            .blog-container {
+                        margin-top: 18px;
+                        .blog-post {
+                                    padding-top: 5px;
+                        }
+                        .blog-text {
+                                    font-size: 1.5rem;
+                                    padding-bottom: 10px;
+                        }
+                        .blog-title {
+                                    font-size: 1.7rem;
+                                    margin-top: 10px;
+                        }
+                        .blog-time {
+                                    font-size: 1.6rem;
+                                    padding: 5px 0;
+                        }
+            }
+            .morecontent span {
+                        display: none;
+            }
+            .social-icons {
+                        font-size: 40px;
+                        text-align: center;
+                        margin-top: 25px;
+            }
 }
 
 
@@ -188,38 +199,37 @@ iframe {
  */
 
 @media screen and (min-width: 544px) and (max-width: 777px) {
-  header {
-    position: fixed;
-    @include size(100%, 8rem);
-    #logo {
-      position: absolute;
-      top: 50%;
-      left: 3rem;
-      @include transform(translateY(-50%));
-      display: inline-block;
-      @include size(16rem, auto);
-      margin: 0;
-    }
-    nav {
-      float: right;
-      height: inherit;
-      ul {
-        display: inline-block;
-        height: inherit;
-        li {
-          display: inline-block;
-          @include size(5rem, inherit);
-          &:last-of-type {
-            margin-left: 1.8rem;
-          }
-        }
-      }
-    }
-  }
-
-  .content {
-    margin-top: 10rem;
-  }
+            header {
+                        position: fixed;
+                        @include size(100%, 8rem);
+                        #logo {
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 3rem;
+                                    @include transform(translateY(-50%));
+                                    display: inline-block;
+                                    @include size(16rem, auto);
+                                    margin: 0;
+                        }
+                        nav {
+                                    float: right;
+                                    height: inherit;
+                                    ul {
+                                                display: inline-block;
+                                                height: inherit;
+                                                li {
+                                                            display: inline-block;
+                                                            @include size(5rem, inherit);
+                                                            &:last-of-type {
+                                                                        margin-left: 1.8rem;
+                                                            }
+                                                }
+                                    }
+                        }
+            }
+            .content {
+                        margin-top: 10rem;
+            }
 }
 
 
@@ -228,44 +238,43 @@ iframe {
  */
 
 @media screen and (min-width: 778px) and (max-width: 845px) {
-  header {
-    position: fixed;
-    @include size(100%, 10rem);
-    padding: 0 2rem;
-    #logo {
-      position: absolute;
-      top: 50%;
-      left: 3rem;
-      @include transform(translateY(-50%));
-      display: inline-block;
-      @include size(auto, 90%);
-      margin: 0;
-    }
-    nav {
-      float: right;
-      height: inherit;
-      ul {
-        display: inline-block;
-        height: inherit;
-        li {
-          display: inline-block;
-          @include size(6rem, inherit);
-          a {
-            span {
-              font-size: 1.6rem;
+            header {
+                        position: fixed;
+                        @include size(100%, 10rem);
+                        padding: 0 2rem;
+                        #logo {
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 3rem;
+                                    @include transform(translateY(-50%));
+                                    display: inline-block;
+                                    @include size(auto, 90%);
+                                    margin: 0;
+                        }
+                        nav {
+                                    float: right;
+                                    height: inherit;
+                                    ul {
+                                                display: inline-block;
+                                                height: inherit;
+                                                li {
+                                                            display: inline-block;
+                                                            @include size(6rem, inherit);
+                                                            a {
+                                                                        span {
+                                                                                    font-size: 1.6rem;
+                                                                        }
+                                                            }
+                                                            &:last-of-type {
+                                                                        margin-left: 2.4rem;
+                                                            }
+                                                }
+                                    }
+                        }
             }
-          }
-          &:last-of-type {
-            margin-left: 2.4rem;
-          }
-        }
-      }
-    }
-  }
-
-  .content {
-    margin-top: 12rem;
-  }
+            .content {
+                        margin-top: 12rem;
+            }
 }
 
 
@@ -274,43 +283,41 @@ iframe {
  */
 
 @media screen and (min-width: 846px) {
-  header {
-    position: fixed;
-    @include size(100%, 10rem);
-    padding: 0 2rem;
-    #logo {
-      position: absolute;
-      top: 50%;
-      left: 3rem;
-      @include transform(translateY(-50%));
-      display: inline-block;
-      @include size(auto, 90%);
-      margin: 0;
-    }
-    nav {
-      float: right;
-      height: inherit;
-      ul {
-        display: inline-block;
-        height: inherit;
-        li {
-          display: inline-block;
-          @include size(7rem, inherit);
-          a {
-            span {
-              font-size: 1.6rem;
+            header {
+                        position: fixed;
+                        @include size(100%, 10rem);
+                        padding: 0 2rem;
+                        #logo {
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 3rem;
+                                    @include transform(translateY(-50%));
+                                    display: inline-block;
+                                    @include size(auto, 90%);
+                                    margin: 0;
+                        }
+                        nav {
+                                    float: right;
+                                    height: inherit;
+                                    ul {
+                                                display: inline-block;
+                                                height: inherit;
+                                                li {
+                                                            display: inline-block;
+                                                            @include size(7rem, inherit);
+                                                            a {
+                                                                        span {
+                                                                                    font-size: 1.6rem;
+                                                                        }
+                                                            }
+                                                            &:last-of-type {
+                                                                        margin-left: 2.4rem;
+                                                            }
+                                                }
+                                    }
+                        }
             }
-          }
-          &:last-of-type {
-            margin-left: 2.4rem;
-          }
-        }
-      }
-    }
-  }
-
-  .content {
-    margin-top: 12rem;
-  }
+            .content {
+                        margin-top: 12rem;
+            }
 }
-
