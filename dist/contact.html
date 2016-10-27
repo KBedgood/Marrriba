@@ -1,30 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link rel="stylesheet" href="styles/app.bundle.css" />
-
-  <title>Marrriba - Contact</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <link rel="stylesheet" href="styles/app.bundle.css" />
+            <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+            <title>Marrriba - Contact</title>
 </head>
 
 <body>
-  <header>
-    <img id="logo" src="images/logoMarrriba.svg" alt="Marrriba!" />
-    <nav>
-      <ul>
-        <li><a href="index.html"><span>Home</span></a></li>
-        <li><a href="about.html"><span>About</span></a></li>
-        <li><a href="boats.html"><span>Boats</span></a></li>
-        <li><a href="blog.html"><span>Blog</span></a></li>
-        <li><a href="#"><span>Contact</span></a></li>
-        <li><a href="#"><span>Login</span></a></li>
-      </ul>
-    </nav>
-  </header>
-  <section class="container-fluid">
-  </section>
-  <script src="scripts/app.bundle.js"></script>
+            <header>
+                        <img id="logo" src="images/logoMarrriba.svg" alt="Marrriba!" />
+                        <nav>
+                                    <ul>
+                                                <li><a href="index.html"><span>Home</span></a></li>
+                                                <li><a href="about.html"><span>About</span></a></li>
+                                                <li><a href="boats.html"><span>Boats</span></a></li>
+                                                <li><a href="blog.html"><span>Blog</span></a></li>
+                                                <li><a href="#"><span>Contact</span></a></li>
+                                                <li><a href="#"><span>Login</span></a></li>
+                                    </ul>
+                        </nav>
+            </header>
+            <section class="container-fluid content-contact">
+                        <div class="row">
+                                    <div class="col-md-6">
+                                                <div class="jotForm">
+                                                            <!-- JotForm -->
+                                                            <script type="text/javascript" src="https://form.jotform.com/jsform/62994984281170" call="jotForm"></script>
+                                                </div>
+                                    </div>
+                                    <div class="col-md-6 map">
+<!--                                                 Google Map -->
+                                                <div class="googleMap" id="googleMap">
+                                                            <iframe width="600" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC44IMfqsMUhZ36hbD5P-CqBPSZdLkI3HM&q=42.2519063,-70.9245499" allowfullscreen>
+                                                            </iframe>
+                                                </div>
+                                                <div class="jake-contact">
+                                                  <h2>Contact</h2>
+                                                  <p class="email">Jake at jake@marrriba.com</p>
+                                                  </div>
+                                                <div class="social-media">
+                                                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                                                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                                </div>
+                                    </div>
+                        </div>
+            </section>
+            <script src="scripts/app.bundle.js"></script>
+            <script src="scripts/app.contact.js"></script>
+            <!--  Google Maps -->
+            <!--                         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcUEbAgkUk04iNkzawnm6Mx74w-F-uVKQ&callback=initMap"></script>
+ -->
 </body>
+
 </html>
