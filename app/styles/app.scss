@@ -55,6 +55,14 @@ header {
 .content {
   margin-top: 2rem;
 
+  .welcome-text {
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
   .twitter-timeline-container {
     margin-top: 25px;
     height: 700px;
@@ -127,14 +135,6 @@ iframe {
       width: 100%;
       margin: 0 auto;
     }
-  }
-
-  .welcome-text {
-    font-size: 5rem;
-    font-weight: 700;
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
   }
 
   .twitter-timeline-container {
