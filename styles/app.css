@@ -7260,6 +7260,30 @@ body {
   body:after {
     font-family: 'Open Sans', sans-serif; }
 
+h1 {
+  font-size: 3rem;
+  font-weight: 800; }
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700; }
+
+h3 {
+  font-size: 2.17rem;
+  font-weight: 700; }
+
+h4 {
+  font-size: 2.12rem;
+  font-weight: 600; }
+
+h5 {
+  font-size: 1.83rem;
+  font-weight: 400; }
+
+h6 {
+  font-size: 1.75rem;
+  font-weight: 400; }
+
 /*
  * Mobile-First
  */
