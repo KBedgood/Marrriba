@@ -4,7 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="styles/app.css" />
+
+    <link rel="stylesheet" href="styles/app.css"/>
+    <link rel="stylesheet" href="styles/home.css"/>
+
     <title>Marrriba - Welcome</title>
 </head>
 
@@ -12,27 +15,24 @@
     <header>
         <a href="#"><img id="logo" src="images/logoMarrriba.svg" alt="Marrriba!" /></a>
         <nav>
-                                    <ul>
-                                                <li><a href="index.html"><span>home</span></a></li>
-                                                <li><a href="about.html"><span>about</span></a></li>
-                                                <li><a href="boats.html"><span>boats</span></a></li>
-                                                <li><a href="blog.html"><span>blog</span></a></li>
-                                                <li><a href="contact.html"><span>contact</span></a></li>
-                                                <li class="log"><a href="#"><span>admin</span></a></li>
-                                    </ul>
+            <ul>
+                <li><a href="#"><span>Home</span></a></li>
+                <li><a href="about.html"><span>About</span></a></li>
+                <li><a href="boats.html"><span>Boats</span></a></li>
+                <li><a href="blog.html"><span>Blog</span></a></li>
+                <li><a href="contact.html"><span>Contact</span></a></li>
+                <li><a href="#"><span>Login</span></a></li>
+            </ul>
         </nav>
     </header>
-    <section class="container-fluid content home">
-        <div class="row">
-            <h1 class="col-md-12 welcome-text">Say "Yes" to New Adventures</h1>
-        </div>
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <section class="container-fluid">
+        <div id="carousel-marrriba" class="carousel slide row" data-ride="carousel">
             <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                <li data-target="#carousel-marrriba" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-marrriba" data-slide-to="1"></li>
+                <li data-target="#carousel-marrriba" data-slide-to="2"></li>
+                <li data-target="#carousel-marrriba" data-slide-to="3"></li>
+                <li data-target="#carousel-marrriba" data-slide-to="4"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
@@ -51,79 +51,31 @@
                     <img src="/images/MarrribaBoats_01.jpg" alt="Fifth slide">
                 </div>
             </div>
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                <span class="icon-prev" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                <span class="icon-next" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
+      </section>
+      <section class="container">
         <div class="row">
-            <div id="blog-data-goes-here" class="col-md-8 blog-container">
-                <div class="row">
-                    <div class="col-md-12 blog-post-1 blog-post">
-                        <div id="blog-post-title" class="blog-title">Blog Title 1</div>
-                        <div id="blog-post-time" class="blog-time">August 15, 2014</div>
-                        <div id="blog-post-text" class="blog-text comment more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero id voluptatum magnam dolor, quia distinctio, ratione quisquam, perferendis sequi non nihil corrupti voluptatibus aliquam consectetur quidem, quas modi illum itaque.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam amet quisquam quis numquam aliquid necessitatibus minima ab ipsam, dicta. Distinctio neque sequi esse accusamus in aperiam quia odio eaque commodi Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus maxime repudiandae eos error delectus, voluptate a, illo cupiditate. Corporis dolores quaerat quasi neque fugiat natus esse repellendus, reiciendis minus itaque...</div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 blog-post-2 blog-post">
-                        <div id="blog-post-title" class="blog-title">Blog Title 2</div>
-                        <div id="blog-post-time" class="blog-time">September 8, 2013</div>
-                        <div id="blog-post-text" class="blog-text comment more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero id voluptatum magnam dolor, quia distinctio, ratione quisquam, perferendis sequi non nihil corrupti voluptatibus aliquam consectetur quidem, quas modi illum itaque.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam amet quisquam quis numquam aliquid necessitatibus minima ab ipsam, dicta. Distinctio neque sequi esse accusamus in aperiam quia odio eaque commodi Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam sequi esse provident perferendis libero minima, ea debitis optio. Nam rerum quidem nesciunt illo sint ad provident velit ipsum molestias eveniet...</div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 blog-post-3 blog-post">
-                        <div id="blog-post-title" class="blog-title">Blog Title 3</div>
-                        <div id="blog-post-time" class="blog-time">July 11, 2016</div>
-                        <div id="blog-post-text" class="blog-text comment more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero id voluptatum magnam dolor, quia distinctio, ratione quisquam, perferendis sequi non nihil corrupti voluptatibus aliquam consectetur quidem, quas modi illum itaque.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam amet quisquam quis numquam aliquid necessitatibus minima ab ipsam, dicta. Distinctio neque sequi esse accusamus in aperiam quia odio eaque commodi Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, consectetur praesentium eos voluptatem non, possimus adipisci, doloremque perspiciatis nihil dicta porro? Maiores quasi id possimus autem ullam cum harum dignissimos...</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 twitter-timeline-container"><a class="twitter-timeline" href="https://twitter.com/search?q=yacht%20%23forsale" data-widget-id="791024611345457154">Tweets about yacht #forsale</a>
-                <script>
-                ! function(d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0],
-                        p = /^http:/.test(d.location) ? 'http' : 'https';
-                    if (!d.getElementById(id)) {
-                        js = d.createElement(s);
-                        js.id = id;
-                        js.src = p + "://platform.twitter.com/widgets.js";
-                        fjs.parentNode.insertBefore(js, fjs);
-                    }
-                }(document, "script", "twitter-wjs");
-                </script>
-            </div>
+          <div id="blog-data-goes-here" class="col-md-8">
+          </div>
+          <div class="col-md-4 twitter-timeline-container"><a class="twitter-timeline" href="https://twitter.com/search?q=yacht%20%23forsale" data-widget-id="791024611345457154">Tweets about yacht #forsale</a>
+            <script>
+            ! function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0],
+                    p = /^http:/.test(d.location) ? 'http' : 'https';
+                if (!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = p + "://platform.twitter.com/widgets.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, "script", "twitter-wjs");
+            </script>
+          </div>
         </div>
-    </section>
-    <section class="container-fluid footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 weather-widget">
-                    <a href="http://www.accuweather.com/en/us/new-york-ny/10007/weather-forecast/349727" class="aw-widget-legal">
-                    </a>
-                    <div id="awcc1477601584623" class="aw-widget-current" data-locationkey="" data-unit="f" data-language="en-us" data-useip="true" data-uid="awcc1477601584623"></div>
-                    <script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
-                </div>
-                <div class="col-md-4">
-                  <h3>Contact Us:</h3>
-                   <h3></h3> 
-                </div>
-                <div class="col-md-4">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                </div>
-            </div>
-        </div>
-    </section>
+      </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
     <script src="scripts/homepage.js"></script>
 </body>
-
 </html>
