@@ -1,105 +1,105 @@
 'use strict';
 
-const path = require('path');
 const gulp = require('gulp');
-const source = require('vinyl-source-stream');
-const buffer = require('vinyl-buffer');
-const es = require('event-stream');
-const srcMaps = require('gulp-sourcemaps');
-const gutil = require('gulp-util');
-const gren = require('gulp-rename');
+const util = require('gulp-util');
+const plumber = require('gulp-plumber');
 const sass = require('gulp-sass');
-const browserify = require('browserify');
 const babel = require('gulp-babel');
 const browserSync = require('browser-sync').create();
 
-const styleSources = [
-  path.join(__dirname, 'app/styles/app.scss'),
-  path.join(__dirname, 'app/styles/lib/*.scss')
-];
-
-const scriptSources = [
-  './app/scripts/app.js',
-  './app/scripts/boats.js'
-];
-
-const fontSources = [
-  path.join(__dirname, 'node_modules/font-awesome/fonts/*')
-];
-
-gulp.task('styles', () => {
-  const sassConfig = {
-    includePaths: [
-      require('node-bourbon').includePaths,
-      path.join(__dirname, 'node_modules/tether/dist/css'),
-      path.join(__dirname, 'node_modules/bootstrap/scss'),
-      path.join(__dirname, 'node_modules/font-awesome/scss')
+const config = {
+  styles: {
+    src: [
+      './app/styles/app.scss'
+    ],
+    sass: {
+      includePaths: [
+        require('node-bourbon').includePaths,
+        './node_modules/tether/dist/css',
+        './node_modules/bootstrap/scss',
+        './node_modules/font-awesome/scss'
+      ]
+    },
+    watch: [
+      './app/styles/app.scss',
+      './app/styles/lib/*.scss'
     ]
-  };
+  },
+  fonts: {
+    src: [
+      './node_modules/font-awesome/fonts/*'
+    ]
+  },
+  scripts: {
+    src: [
+      './app/scripts/homepage.js',
+      './app/scripts/boats.js'
+    ],
+    babel: {
+      presets: [ 'es2015' ]
+    },
+    watch: [
+      './app/scripts/homepage.js',
+      './app/scripts/boats.js'
+    ]
+  },
+  markup: {
+    watch: [
+      './dist/*.html'
+    ]
+  }
+};
 
-  return gulp.src(styleSources)
-    .pipe(srcMaps.init({ loadMaps: true }))
-    .pipe(sass(sassConfig).on('error', sass.logError))
-    .pipe(srcMaps.write())
-    .pipe(gren({ dirname: '', extname: '.bundle.css' }))
-    .pipe(gulp.dest(path.join(__dirname, 'dist/styles')))
+function compileStyles() {
+  return gulp
+    .src(config.styles.src)
+    .pipe(sass(config.styles.sass).on('error', sass.logError))
+    .pipe(gulp.dest('./dist/styles'))
     .pipe(browserSync.stream());
-});
+}
 
-gulp.task('scripts', () => {
-  const babelConfig = {
-    presets: [ 'es2015' ]
-  };
+function copyFonts() {
+  return gulp
+    .src(config.fonts.src)
+    .pipe(gulp.dest('./dist/fonts'));
+}
 
-  const tasks = scriptSources.map(entry => {
-    return browserify({
-      entries: [ entry ],
-      debug: true
-    }).bundle()
-      .on('error', gutil.log)
-      .pipe(source(entry))
-      .pipe(buffer())
-      .pipe(srcMaps.init({ loadMaps: true }))
-      .pipe(babel(babelConfig))
-      .on('error', gutil.log)
-      .pipe(srcMaps.write())
-      .pipe(gren({ dirname: '', extname: '.bundle.js' }))
-      .pipe(gulp.dest(path.join(__dirname, 'dist/scripts')));
-  });
+function transpileJavaScript() {
+  return gulp
+    .src(config.scripts.src)
+    .pipe(plumber())
+    .pipe(babel(config.scripts.babel))
+    .on('error', err => {
+      util.log(util.colors.red('[JavaScript Transpilation Error]'));
+      util.log(util.colors.red(err.message));
+    })
+    .pipe(gulp.dest('./dist/scripts'));
+}
 
-  return es.merge.apply(null, tasks);
-});
-
-gulp.task('fonts', () => {
-  return gulp.src(fontSources)
-    .pipe(gren({ dirname: '' }))
-    .pipe(gulp.dest(path.join(__dirname, 'dist/fonts')));
-});
-
-gulp.task('build', [ 'styles', 'scripts', 'fonts' ]);
-
-gulp.task('serve', [ 'build' ], () => {
-  browserSync.init({
+function startServer() {
+  return browserSync.init({
     server: {
-      baseDir: path.join(__dirname, 'dist')
+      baseDir: './dist'
     }
   });
-});
+}
 
-gulp.task('reload', done => {
-  browserSync.reload();
-  done();
-});
+function reload() {
+  return browserSync.reload();
+}
 
-gulp.task('watch:scripts', [ 'scripts' ], done => {
-  browserSync.reload();
-  done();
-});
+function watchFiles() {
+  gulp.watch(config.styles.watch, [ 'styles' ]);
+  gulp.watch(config.scripts.watch, [ 'scripts' ]);
+  gulp.watch(config.markup.watch, [ 'reload' ]);
+}
 
-gulp.task('watch', [ 'serve' ], () => {
-  gulp.watch(styleSources, [ 'styles' ]);
-  gulp.watch(scriptSources, [ 'watch:scripts' ]);
-  gulp.watch(path.join(__dirname, 'dist/*.html'), [ 'reload' ]);
-});
-
-gulp.task('default', [ 'watch' ]);
+gulp.task('styles', compileStyles);
+gulp.task('fonts', copyFonts);
+gulp.task('transpile', transpileJavaScript);
+gulp.task('scripts', [ 'transpile' ], reload);
+gulp.task('build', [ 'styles', 'fonts', 'scripts' ]);
+gulp.task('serve', [ 'build' ], startServer);
+gulp.task('reload', reload);
+gulp.task('watch', watchFiles);
+gulp.task('default', [ 'serve', 'watch' ]);
