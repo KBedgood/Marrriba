@@ -7247,14 +7247,18 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif; }
+  box-sizing: border-box; }
 
 html,
 body {
   width: 100vw;
   min-height: 100vh;
   font-size: 62.5%; }
+  html, html:before, html:after,
+  body,
+  body:before,
+  body:after {
+    font-family: 'Open Sans', sans-serif; }
 
 /*
  * Mobile-First
@@ -7298,6 +7302,12 @@ header {
 
 .content {
   margin-top: 2rem; }
+  .content .welcome-text {
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px; }
   .content .twitter-timeline-container {
     margin-top: 25px;
     height: 700px; }
@@ -7346,12 +7356,6 @@ iframe {
 .home .carousel-item img {
   width: 100%;
   margin: 0 auto; }
-
-.home .welcome-text {
-  font-size: 5rem;
-  text-align: center;
-  padding-top: 25px;
-  padding-bottom: 25px; }
 
 .home .twitter-timeline-container {
   margin-top: 25px;
