@@ -10,7 +10,7 @@ $(document).ready(function () {
       var htmlString = '';
 
       data.blogs.forEach(function (blog) {
-        htmlString += '\n        <div class="blog-post">\n          <h1>' + blog.title + '</h1>\n          <h2>' + moment(blog.posted).fromNow() + '</h2>\n          <p>' + blog.description + '<p>\n        </div>\n        <hr />';
+        htmlString += '\n        <div class="blog-post">\n          <h1>' + blog.title + '</h1>\n          <span class="timestamp">' + moment(blog.posted).fromNow() + '</span>\n          <p>' + blog.description + '<p>\n        </div>\n        <hr />';
       });
 
       $('#blog-data-goes-here').html(htmlString);
