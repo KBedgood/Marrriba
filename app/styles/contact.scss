@@ -1,9 +1,11 @@
+@import 'lib/colors';
 .jotForm {
-            margin-top: -46px;
+            margin-top: -40px;
 }
 
 iframe {
-            margin-top: 90px;
+            margin-top: 10px;
+            width: 90%;
 }
 
 .social-media {
@@ -13,12 +15,21 @@ iframe {
 
 .jake-contact {
             margin-top: 40px;
-            h2 {
-                        font-size: 28px;
-                        color: $bodyTextColor;
-                        p .email {
-                                    font-size: 18px;
-                                    color: hsl(201, 21%, 21%);
-                        }
-            }
 }
+.marina {
+            font-size: 28px;
+            color: $accentColor;
+}
+
+
+h2 {
+            font-size: 28px;
+            color: $bodyTextColor;
+}
+
+.email {
+            font-size: 18px;
+            color: hsl(201, 21%, 21%);
+            font-weight: 700;
+}
+

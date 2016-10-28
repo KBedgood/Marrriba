@@ -2,8 +2,8 @@
   position: relative;
   padding: 2rem 0.7rem; }
   .container #boat-data-goes-here .boat .information .price {
+    color: #ff530f;
     font-size: 1.4rem;
     font-weight: 600;
     font-style: italic;
-    line-height: 2.1rem;
-    color: #ff530f; }
+    line-height: 2.1rem; }
