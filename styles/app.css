@@ -7338,5 +7338,19 @@ header {
 footer {
   width: 100%;
   height: 20rem;
-  color: white;
-  background-color: #2a3941; }
+  padding-top: 25px;
+  margin-bottom: 27px;
+  background-color: #2a3941;
+  width: 100%;
+  height: 29rem;
+  color: #f0f0f0; }
+  footer i {
+    font-size: 8rem;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px; }
+  footer i:hover {
+    color: #ff530f; }
+  footer .aw-widget-current {
+    max-width: 185px;
+    margin: 5px auto; }
