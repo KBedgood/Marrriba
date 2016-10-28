@@ -11,7 +11,7 @@ $(document).ready(() => {
         htmlString += `
         <div class="blog-post">
           <h1>${blog.title}</h1>
-          <h2>${moment(blog.posted).fromNow()}</h2>
+          <span class="timestamp">${moment(blog.posted).fromNow()}</span>
           <p>${blog.description}<p>
         </div>
         <hr />`;

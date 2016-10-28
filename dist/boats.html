@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-            <link rel="stylesheet" href="styles/app.css" />
-            <title>Marrriba - Big Boats</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="styles/app.css" />
+  <link rel="stylesheet" href="styles/boats.css" />
+  <title>Marrriba - Welcome</title>
 </head>
 
 <body>
-            <header>
-                        <a href="index.html"><img id="logo" src="images/logoMarrriba.svg" alt="Marrriba!" /></a>
-                        <nav>
-                                    <ul>
-                                                <li><a href="index.html"><span>home</span></a></li>
-                                                <li><a href="about.html"><span>about</span></a></li>
-                                                <li><a href="boats.html"><span>boats</span></a></li>
-                                                <li><a href="blog.html"><span>blog</span></a></li>
-                                                <li><a href="contact.html"><span>contact</span></a></li>
-                                                <li class="log"><a href="#"><span>admin</span></a></li>
-                                    </ul>
-                        </nav>
-            </header>
-            <section class="container content boats">
-                        <div class="row">
-                                    <h1 class="mainHeader">Active Boat Listings</h1>
-                        </div>
-                        <div class="row" id="boatDock">
-                        </div>
-            </section>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-            <script src="scripts/boats.js"></script>
-</body>
+  <header>
+    <a href="index.html"><img id="logo" src="images/logoMarrriba.svg" alt="Marrriba!" /></a>
+    <nav>
+      <ul>
+        <li><a href="index.html"><span>Home</span></a></li>
+        <li><a href="about.html"><span>About</span></a></li>
+        <li><a href="#"><span>Boats</span></a></li>
+        <li><a href="blog.html"><span>Blog</span></a></li>
+        <li><a href="contact.html"><span>Contact</span></a></li>
+        <li><a href="#"><span>Login</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="container">
+    <h1>Boats for Sale</h1>
+    <div id="boat-data-goes-here" class="container"></div>
+  </section>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.min.js"></script>
+  <script src="scripts/boats.js"></script>
+</body>
 </html>
+

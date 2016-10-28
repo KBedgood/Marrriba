@@ -97,6 +97,10 @@ header {
       }
     }
   }
+
+  body > section:first-of-type {
+    margin-top: 8rem;
+  }
 }
 
 @media screen and (min-width: 778px) and (max-width: 845px) {
@@ -139,6 +143,10 @@ header {
         }
       }
     }
+  }
+
+  body > section:first-of-type {
+    margin-top: 10rem;
   }
 }
 
@@ -199,5 +207,9 @@ header {
         }
       }
     }
+  }
+
+  body > section:first-of-type {
+    margin-top: 10rem !important;
   }
 }

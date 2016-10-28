@@ -1,0 +1,29 @@
+body > section:first-of-type {
+  padding-top: 2rem;
+
+  background-color: hsl(0, 0%, 94%);
+
+  #boat-data-goes-here {
+    .boat {
+      position: relative;
+
+      padding: 2rem 0.7rem;
+      border-bottom: 0.2rem solid hsl(0, 0%, 97%);
+
+      .information {
+        .price {
+          font-size: 1.4rem;
+          font-weight: 600;
+          font-style: italic;
+          line-height: 2.1rem;
+
+          color: hsl(160, 60%, 50%);
+        }
+      }
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+  }
+}
