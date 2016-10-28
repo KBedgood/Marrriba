@@ -1,4 +1,5 @@
 body section:first-of-type {
+  min-height: initial;
   padding-top: 0;
   padding-bottom: 0; }
   body section:first-of-type #carousel-marrriba .carousel-item img {
