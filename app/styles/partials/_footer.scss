@@ -17,6 +17,13 @@ footer {
   }
   .contact-info {
     padding-left: 35px;
+    a {
+      text-decoration: none;
+      color: $accentColor;
+    }
+    a:hover {
+      color: $backgroundColor;
+    }
   }
   .social-icons {
     a {

@@ -7488,6 +7488,11 @@ footer {
     color: #ff530f; }
   footer .contact-info {
     padding-left: 35px; }
+    footer .contact-info a {
+      text-decoration: none;
+      color: #ff530f; }
+    footer .contact-info a:hover {
+      color: #f0f0f0; }
   footer .social-icons a {
     text-decoration: none;
     color: #f0f0f0; }
