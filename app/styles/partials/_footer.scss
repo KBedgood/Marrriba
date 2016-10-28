@@ -1,0 +1,6 @@
+footer {
+  @include size(100%, 20rem);
+
+  color: white;
+  background-color: $bodyTextColor;
+}
