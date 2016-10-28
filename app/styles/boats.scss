@@ -1,3 +1,5 @@
+@import 'lib/colors';
+
 .container {
   #boat-data-goes-here {
     .boat {
@@ -12,7 +14,7 @@
           font-style: italic;
           line-height: 2.1rem;
 
-          color: hsl(160, 60%, 50%);
+          color: $accentColor;
         }
       }
     }

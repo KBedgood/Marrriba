@@ -1,3 +1,5 @@
+@import 'lib/colors';
+
 body {
   section:first-of-type {
     min-height: initial;
@@ -14,7 +16,7 @@ body {
     padding-top: 0;
     padding-bottom: 0;
 
-    background-color: hsl(0, 0%, 94%);
+    background-color: $backgroundColor;
 
     #blog-data-goes-here {
       margin-top: 2rem;
