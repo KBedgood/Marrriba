@@ -9,14 +9,14 @@
 
       .information {
         .price {
+          color: $accentColor;
           font-size: 1.4rem;
           font-weight: 600;
           font-style: italic;
           line-height: 2.1rem;
-
-          color: $accentColor;
         }
       }
     }
   }
 }
+
