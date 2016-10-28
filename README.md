@@ -1,7 +1,6 @@
-#Marrriba
+#[Marrriba](https://marinaarrriba.github.io/Marrriba/)
 
 ##Setup
-
 Make sure you have `EditorConfig` installed for Sublime Text (assuming you Pacage Control installed):
 - Open Sublime Text
 - Hit `Ctrl`/`CMD` + `Shift` + `P`
@@ -11,7 +10,6 @@ Make sure you have `EditorConfig` installed for Sublime Text (assuming you Pacag
 Make sure to `npm install` after cloning the repository
 
 ## Included Scripts
-
 ```sh
 $ npm start
 ```
