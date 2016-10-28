@@ -7474,28 +7474,46 @@ header {
     margin-top: 10rem !important; } }
 
 footer {
-  padding-top: 25px;
-  padding-bottom: 21px;
+  padding-top: 20px;
+  padding-bottom: 18px;
   background-color: #2a3941;
   width: 100%;
   color: #f0f0f0; }
-  footer i.fa {
+  footer .contact-info {
+    padding-left: 10px; }
+    footer .contact-info a {
+      text-decoration: underline;
+      color: #f0f0f0; }
+    footer .contact-info a:hover {
+      color: #ff530f; }
+    footer .contact-info i.fa {
+      padding-right: 6px;
+      font-size: 2.1rem;
+      color: #ff530f; }
+    footer .contact-info span {
+      padding-left: 28px; }
+  footer .social-icons i.fa {
     font-size: 4rem;
     margin: 1.3rem;
     text-align: center;
     margin-bottom: 15px; }
-  footer i:hover {
+  footer .social-icons i:hover {
     color: #ff530f; }
-  footer .contact-info {
-    padding-left: 35px; }
-    footer .contact-info a {
-      text-decoration: none;
-      color: #ff530f; }
-    footer .contact-info a:hover {
-      color: #f0f0f0; }
   footer .social-icons a {
     text-decoration: none;
     color: #f0f0f0; }
   footer .aw-widget-current {
-    max-width: 185px;
+    max-width: 165px;
+    max-width: 145px;
     margin: 5px auto; }
+  footer div.aw-widget-current-inner div.aw-widget-content {
+    border: none !important;
+    border-radius: 3px; }
+  footer a.aw-toggle {
+    display: none; }
+  footer div.aw-widget-current-inner div.aw-widget-content a.aw-current-weather p time {
+    display: none !important; }
+  footer div.aw-widget-current-inner div.aw-widget-content a.aw-current-weather p span.aw-weather-description {
+    display: none !important; }
+  footer .lt-479 div.aw-widget-current-inner div.aw-widget-content a.aw-current-weather div.aw-current-weather-inner {
+    padding-bottom: 20px !important; }

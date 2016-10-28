@@ -1,40 +1,62 @@
 @import 'lib/colors';
-
 footer {
-  padding-top: 25px;
-  padding-bottom: 21px;
-  background-color: $bodyTextColor;
-  width: 100%;
-  color: $backgroundColor;
-  i.fa {
-    font-size: 4rem;
-    margin: 1.3rem;
-    text-align: center;
-    margin-bottom: 15px;
-  }
-  i:hover {
-    color: $accentColor;
-  }
-  .contact-info {
-    padding-left: 35px;
-    a {
-      text-decoration: none;
-      color: $accentColor;
+    padding-top: 20px;
+    padding-bottom: 18px;
+    background-color: $bodyTextColor;
+    width: 100%;
+    color: $backgroundColor;
+    .contact-info {
+        padding-left: 10px;
+        a {
+            text-decoration: underline;
+            color: $backgroundColor;
+        }
+        a:hover {
+            color: $accentColor;
+        }
+        i.fa {
+          padding-right: 6px;
+          font-size: 2.1rem;
+          color: $accentColor;
+        }
+        span {
+          padding-left: 28px;
+        }
     }
-    a:hover {
-      color: $backgroundColor;
+    .social-icons {
+        i.fa {
+            font-size: 4rem;
+            margin: 1.3rem;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        i:hover {
+            color: $accentColor;
+        }
+        a {
+            text-decoration: none;
+            color: $backgroundColor;
+        }
     }
-  }
-  .social-icons {
-    a {
-      text-decoration: none;
-      color: $backgroundColor;
+    .aw-widget-current {
+        max-width: 165px;
+        max-width: 145px;
+        margin: 5px auto;
     }
-  }
-  .aw-widget-current {
-    max-width: 185px;
-    margin: 5px auto;
-  }
+    div.aw-widget-current-inner div.aw-widget-content {
+        border: none !important;
+        border-radius: 3px;
+    }
+    a.aw-toggle {
+        display: none;
+    }
+    div.aw-widget-current-inner div.aw-widget-content a.aw-current-weather p time {
+      display: none !important;
+    }
+    div.aw-widget-current-inner div.aw-widget-content a.aw-current-weather p span.aw-weather-description {
+      display: none !important;
+    }
+    .lt-479 div.aw-widget-current-inner div.aw-widget-content a.aw-current-weather div.aw-current-weather-inner {
+      padding-bottom: 20px !important;
+    }
 }
-
-
