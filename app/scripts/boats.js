@@ -6,7 +6,7 @@ $(document).ready(() => {
       const boatsElem = document.getElementById('boat-data-goes-here');
       let boatsHTML = ``;
 
-      results.boats.forEach(boat => {
+      results.boats.forEach((boat, index) => {
         const formattedPrice = boat.price.formatMoney(2, '.', ',');
         boatsHTML += `
           <article class="boat row">
@@ -16,7 +16,7 @@ $(document).ready(() => {
               <div class="price">$${formattedPrice}</div>
               <p>${boat.description}</p>
             </div>
-          </article>`;
+          </article>${(results.boats.length != index + 1) ? '<hr />' : ''}`;
       });
 
       boatsElem.innerHTML = boatsHTML;

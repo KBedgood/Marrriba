@@ -9,8 +9,8 @@ $(document).ready(function () {
     success: function success(data) {
       var htmlString = '';
 
-      data.blogs.forEach(function (blog) {
-        htmlString += '\n        <div class="blog-post">\n          <h1>' + blog.title + '</h1>\n          <span class="timestamp">' + moment(blog.posted).fromNow() + '</span>\n          <p>' + blog.description + '<p>\n        </div>\n        <hr />';
+      data.blogs.forEach(function (blog, index) {
+        htmlString += '\n        <div class="blog-post">\n          <h1>' + blog.title + '</h1>\n          <span class="timestamp">' + moment(blog.posted).fromNow() + '</span>\n          <p>' + blog.description + '<p>\n        </div>' + (data.blogs.length != index + 1 ? '<hr />' : '');
       });
 
       $('#blog-data-goes-here').html(htmlString);

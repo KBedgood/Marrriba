@@ -8,9 +8,9 @@ $(document).ready(function () {
       var boatsElem = document.getElementById('boat-data-goes-here');
       var boatsHTML = '';
 
-      results.boats.forEach(function (boat) {
+      results.boats.forEach(function (boat, index) {
         var formattedPrice = boat.price.formatMoney(2, '.', ',');
-        boatsHTML += '\n          <article class="boat row">\n            <img class="picutre col-md-5" src="' + boat.picture + '" />\n            <div class="information col-md-7">\n              <h1>' + boat.name + '</h1>\n              <div class="price">$' + formattedPrice + '</div>\n              <p>' + boat.description + '</p>\n            </div>\n          </article>';
+        boatsHTML += '\n          <article class="boat row">\n            <img class="picutre col-md-5" src="' + boat.picture + '" />\n            <div class="information col-md-7">\n              <h1>' + boat.name + '</h1>\n              <div class="price">$' + formattedPrice + '</div>\n              <p>' + boat.description + '</p>\n            </div>\n          </article>' + (results.boats.length != index + 1 ? '<hr />' : '');
       });
 
       boatsElem.innerHTML = boatsHTML;

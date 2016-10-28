@@ -7,14 +7,13 @@ $(document).ready(() => {
     success: data => {
       let htmlString = ``;
 
-      data.blogs.forEach(blog => {
+      data.blogs.forEach((blog, index) => {
         htmlString += `
         <div class="blog-post">
           <h1>${blog.title}</h1>
           <span class="timestamp">${moment(blog.posted).fromNow()}</span>
           <p>${blog.description}<p>
-        </div>
-        <hr />`;
+        </div>${(data.blogs.length != index + 1) ? '<hr />' : ''}`;
       });
 
       $('#blog-data-goes-here').html(htmlString);

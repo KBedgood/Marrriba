@@ -1,14 +1,13 @@
-body > section:first-of-type {
-  padding-top: 2rem;
-
-  background-color: hsl(0, 0%, 94%);
+.container {
+  & > h1 {
+    color: hsl(17, 100%, 53%);
+  }
 
   #boat-data-goes-here {
     .boat {
       position: relative;
 
       padding: 2rem 0.7rem;
-      border-bottom: 0.2rem solid hsl(0, 0%, 97%);
 
       .information {
         .price {
@@ -19,10 +18,6 @@ body > section:first-of-type {
 
           color: hsl(160, 60%, 50%);
         }
-      }
-
-      &:last-of-type {
-        border-bottom: none;
       }
     }
   }

@@ -30,6 +30,13 @@ body {
 
 body {
   background-image: url('../images/background.png');
+
+  section:first-of-type {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    background-color: $backgroundColor;
+  }
 }
 
 h1,

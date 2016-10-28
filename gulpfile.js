@@ -34,14 +34,16 @@ const config = {
   scripts: {
     src: [
       './app/scripts/homepage.js',
-      './app/scripts/boats.js'
+      './app/scripts/boats.js',
+      './app/scripts/blog.js'
     ],
     babel: {
       presets: [ 'es2015' ]
     },
     watch: [
       './app/scripts/homepage.js',
-      './app/scripts/boats.js'
+      './app/scripts/boats.js',
+      './app/scripts/blog.js'
     ]
   },
   markup: {
