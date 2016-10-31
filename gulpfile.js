@@ -33,6 +33,7 @@ const config = {
   },
   scripts: {
     src: [
+      './app/scripts/app.js',
       './app/scripts/homepage.js',
       './app/scripts/boats.js',
       './app/scripts/blog.js'
@@ -41,6 +42,7 @@ const config = {
       presets: [ 'es2015' ]
     },
     watch: [
+      './app/scripts/app.js',
       './app/scripts/homepage.js',
       './app/scripts/boats.js',
       './app/scripts/blog.js'

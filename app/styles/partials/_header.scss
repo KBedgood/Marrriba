@@ -44,6 +44,8 @@ header {
 
         &:last-of-type {
           a {
+            cursor: pointer;
+
             span {
               font-weight: 300;
               color: $accentColor;
