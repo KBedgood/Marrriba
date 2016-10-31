@@ -17,12 +17,39 @@
                 <li><a href="index.html"><span>Home</span></a></li>
                 <li><a href="about.html"><span>About</span></a></li>
                 <li><a href="boats.html"><span>Boats</span></a></li>
-                <li><a href="#"><span>Blog</span></a></li>
+                <li><a href="blog.html"><span>Blog</span></a></li>
                 <li><a href="contact.html"><span>Contact</span></a></li>
-                <li><a href="#"><span>Login</span></a></li>
+                <li><a id="user-button"><span>Login</span></a></li>
             </ul>
         </nav>
     </header>
+    <div id="login-modal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+            <h4 class="modal-title">Admin Login</h4>
+          </div>
+          <div class="modal-body">
+            <form id="login-form">
+              <label for="username">Username</label>
+              <input id="username" class="form-control" type="text" placeholder="john.doe1337" required />
+              <label for="password">Password</label>
+              <input id="password" class="form-control" type="password" placeholder="updog" required />
+              <input class="form-control btn btn-success" type="submit" value="Login" />
+            </form>
+            <div id="login-error" class="alert alert-danger">
+              <strong>Oh dang, son!</strong> <span></span>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <section class="container content contact">
         <div class="row">
             <div class="col-md-6">
@@ -58,22 +85,41 @@
                 </div>
                 <div class="col-md-4 contact-info">
                     <h4>Contact Us:</h4>
-                    <p>Monday–Saturday 11AM–11PM</p>
-                    <p>Closed on Sundays</p>
-                    <p>10055 State Road 101, Brookville, IN 47012</p>
-                    <p><a href="tel:1-781-749-2110">781.749.2110</a></p>
+                    <p><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> 10055 State Road 101, Brookville, IN 47012
+                        <br> <i class="fa fa-fw fa-phone" aria-hidden="true"></i>
+                        <a href="tel:1-781-749-2110">(781) 749-2110</a></p>
+                    <p> <i class="fa fa-fw fa-clock-o" aria-hidden="true"></i> Monday–Saturday 11AM–11PM,
+                        <br> <span>Closed Sundays</span></p>
+                    <p><i class="fa fa-fw fa-envelope-o" aria-hidden="true"></i>
+                        <a href="mailto:jake.boyles@marrriba.com"> jake.boyles@marrriba.com</a></p>
                 </div>
                 <div class="col-md-4 social-icons">
-                    <a href="https://www.facebook.com/LaMarinaNYC"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    <a href="https://twitter.com/lamarinanyc"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    <a href="https://www.instagram.com/lamarinaNYC/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <h4>Connect With Us:</h4>
+                    <a href="https://www.facebook.com/LaMarinaNYC"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/lamarinanyc"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/lamarinaNYC/"><i class="fa fa-fw fa-instagram" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
     </footer>
-    <!--  Google Maps -->
-    <!--                         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcUEbAgkUk04iNkzawnm6Mx74w-F-uVKQ&callback=initMap"></script>
- -->
-</body>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
+    ga('create', 'UA-86488301-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
 </html>

@@ -33,17 +33,21 @@ const config = {
   },
   scripts: {
     src: [
+      './app/scripts/app.js',
       './app/scripts/homepage.js',
       './app/scripts/boats.js',
-      './app/scripts/blog.js'
+      './app/scripts/blog.js',
+      './app/scripts/admin.js'
     ],
     babel: {
       presets: [ 'es2015' ]
     },
     watch: [
+      './app/scripts/app.js',
       './app/scripts/homepage.js',
       './app/scripts/boats.js',
-      './app/scripts/blog.js'
+      './app/scripts/blog.js',
+      './app/scripts/admin.js'
     ]
   },
   markup: {
