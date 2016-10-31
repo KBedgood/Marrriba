@@ -28,7 +28,7 @@ function userLogout() {
   localStorage.removeItem('token');
 
   if (/admin.html/ig.test(window.location.href)) {
-    window.location.href = '/';
+    window.location.href = 'index.html';
   } else {
     userButton.removeClass('logged-in');
     userButton.find('span').html('Login');
