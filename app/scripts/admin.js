@@ -36,3 +36,9 @@ $('#blog-post').on('submit', event => {
     }
   });
 });
+
+$(document).ready(() => {
+  const localToken = localStorage.getItem('token');
+
+  if (!localToken) window.location.href = 'index.html';
+})
