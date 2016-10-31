@@ -9,7 +9,18 @@ $(document).ready(function () {
     success: function success(data) {
       var htmlString = '';
 
-      data.blogs.forEach(function (blog, index) {
+      var blogEntries = data.blogs;
+      blogEntries.sort(function (a, b) {
+        var dateA = new Date(a.posted);
+        var dateB = new Date(b.posted);
+
+        if (dateA > dateB) return -1;
+        if (dateA < dateB) return 1;
+      });
+      blogEntries.splice(2);
+      console.log(blogEntries);
+
+      blogEntries.forEach(function (blog, index) {
         htmlString += '\n        <div class="blog-post">\n          <h1>' + blog.title + '</h1>\n          <span class="timestamp">' + moment(blog.posted).fromNow() + '</span>\n          <p>' + blog.description + '<p>\n        </div>' + (data.blogs.length != index + 1 ? '<hr />' : '');
       });
 

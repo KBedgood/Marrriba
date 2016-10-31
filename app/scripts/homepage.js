@@ -7,7 +7,18 @@ $(document).ready(() => {
     success: data => {
       let htmlString = ``;
 
-      data.blogs.forEach((blog, index) => {
+      let blogEntries = data.blogs;
+      blogEntries.sort((a, b) => {
+        const dateA = new Date(a.posted);
+        const dateB = new Date(b.posted);
+
+        if (dateA > dateB) return -1;
+        if (dateA < dateB) return 1;
+      });
+      blogEntries.splice(2);
+      console.log(blogEntries);
+
+      blogEntries.forEach((blog, index) => {
         htmlString += `
         <div class="blog-post">
           <h1>${blog.title}</h1>
