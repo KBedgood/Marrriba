@@ -7347,9 +7347,11 @@ header {
           background-color: #ff530f; }
           header nav ul li a:hover span {
             color: #f0f0f0; }
-      header nav ul li:last-of-type a span {
-        font-weight: 300;
-        color: #ff530f; }
+      header nav ul li:last-of-type a {
+        cursor: pointer; }
+        header nav ul li:last-of-type a span {
+          font-weight: 300;
+          color: #ff530f; }
       header nav ul li:last-of-type:hover a span {
         color: white; }
 
