@@ -20,7 +20,7 @@ function userLogin(event) {
     if (result.error) return displayLoginError(result.error);
 
     localStorage.setItem('token', result.token);
-    window.location.href = '/admin.html';
+    window.location.href = 'admin.html';
   });
 }
 
