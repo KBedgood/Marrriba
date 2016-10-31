@@ -16,7 +16,6 @@ $(document).ready(() => {
         if (dateA < dateB) return 1;
       });
       blogEntries.splice(2);
-      console.log(blogEntries);
 
       blogEntries.forEach((blog, index) => {
         htmlString += `
