@@ -1,0 +1,34 @@
+@import 'lib/colors';
+
+#title {
+  width: 100%;
+  height: 3.8rem;
+
+  padding: 0.4rem 0.6rem;
+  margin-bottom: 2rem;
+
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.75rem;
+
+  color: $bodyTextColor;
+  background-color: $backgroundColor;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input[type="submit"] {
+  margin-top: 2rem;
+  float: right;
+
+  font-size: 1.8rem;
+}
+
+#post-error {
+  margin-top: 2rem;
+
+  font-size: 1.4rem;
+}
