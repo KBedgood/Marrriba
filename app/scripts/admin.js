@@ -24,15 +24,13 @@ $('#blog-post').on('submit', event => {
     }
   }).then(result => {
     if (result.error) {
-      if (postError.hasClass('invisible')) postError.removeClass('invisible');
-
+      postError.show();
       postError.find('span').html(result.error);
     } else {
-      if (postError.hasClass('invisible')) postError.removeClass('invisible');
+      postError.show();
       postError.removeClass('alert-danger');
       postError.addClass('alert-success');
-
-      postError.find('span').html('Blog post submitted! Redirecting to <strong>/blogs</strong>...');
+      postError.find('span').html('Blog post submitted! Redirecting to <strong>/blogs</strong> in 3 seconds...');
 
       window.setTimeout(() => window.location.href = 'blog.html', 3000);
     }
