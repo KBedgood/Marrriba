@@ -40,3 +40,9 @@ $('#blog-post').on('submit', function (event) {
     }
   });
 });
+
+$(document).ready(function () {
+  var localToken = localStorage.getItem('token');
+
+  if (!localToken) window.location.href = 'index.html';
+});
