@@ -44,7 +44,7 @@ function handleUserButton(event) {
 }
 
 function displayLoginError(message) {
-  if (loginError.hasClass('invisible')) loginError.removeClass('invisible');
+  loginError.show();
   loginError.find('span').html(message);
 }
 
